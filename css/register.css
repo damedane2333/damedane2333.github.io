@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?ga5lh3');
+    src: url('../fonts/icomoon.eot?ga5lh3#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?ga5lh3') format('truetype'), url('fonts/icomoon.woff?ga5lh3') format('woff'), url('fonts/icomoon.svg?ga5lh3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.header {
+    position: relative;
+    height: 105px;
+    /* background-color: rgb(213, 235, 154);*/
+}
+
+.logo {
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    float: left;
+}
+
+.logo a {
+    display: block;
+    width: 190px;
+    height: 70px;
+    /* background: url("../images/logo.jpg") no-repeat; */
+    font-size: 0;
+}
+
+.logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    border-bottom: 3px solid rgb(211, 247, 165);
+}
+
+.footer {
+    height: 120px;
+}
+
+/* 验证码 */
+
+.yzm {
+    position: relative;
+}
+
+.yzm2 {
+    width: 57px;
+    height: 36px;
+    position: absolute;
+    right: 173px;
+    top: 1px;
+    text-align: center;
+    line-height: 36px;
+    background-color: rgb(219, 216, 216);
+    border: 1px solid rgb(196, 194, 194);
+    border-radius: 10px;
+}
+
+.register_main {
+    height: 522px;
+    border: 1px solid #cccc;
+    margin-top: 20px;
+}
+
+.register_main h3 {
+    height: 42px;
+    border: 1px solid #cccc;
+    background-color: #aee6ac;
+    line-height: 42px;
+    padding: 0px 10px;
+}
+
+.register_main .login {
+    font-size: 12px;
+    float: right;
+}
+
+.register_main .login a {
+    color: rgb(245, 20, 20);
+}
+
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0px;
+}
+
+.reg_form ul {
+    margin-left: 100px;
+}
+
+/* 给lable标签一个宽度然后转换为行内块元素这样可以使用文字靠右 */
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+.reg_form ul li .inp {
+    position: relative;
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+
+/* 密码输入框给一个相对定位 */
+
+.pwd1 {
+    position: relative;
+}
+
+/* 显示按钮给一个绝对定位 */
+
+#lookor {
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 275px;
+    top: 0px;
+}
+
+#lookor img {
+    text-align: center;
+    margin-top: 1px;
+    margin-right: 0px;
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+.pwd2 {
+    position: relative;
+}
+
+/* 显示按钮给一个绝对定位 */
+
+#lookor2 {
+    font-family: 'icomoon';
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    top: 0px;
+    right: 275px;
+}
+
+#lookor2 img {
+    text-align: center;
+    margin-top: 1px;
+    margin-right: 0px;
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+/* 设置小li之间的距离 */
+
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+}
+
+/* 密码错误或正确的小图标 */
+
+.error_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../images/error.png");
+}
+
+.success {
+    color: green;
+}
+
+/* safe */
+
+.safe {
+    margin-left: 158px;
+}
+
+/* 弱中强 */
+
+.safe span {
+    color: white;
+    padding: 0 12px;
+}
+
+/* 弱 */
+
+.safe1 {
+    background-color: rgb(204, 48, 36);
+}
+
+/* 中 */
+
+.safe2 {
+    background-color: rgb(100, 180, 80);
+}
+
+/* 强 */
+
+.safe3 {
+    background-color: rgb(233, 150, 54);
+}
+
+/* 复选框 */
+
+.checkbox {
+    vertical-align: middle;
+}
+
+.agree {
+    padding-left: 100px;
+}
+
+.agree a {
+    color: rgb(56, 138, 245);
+}
+
+/* 立即注册 */
+
+.register {
+    text-align: center;
+    border: none !important;
+    width: 200px;
+    height: 34px;
+    line-height: 34px;
+    color: white;
+    background-color: rgb(174, 240, 157);
+    margin: 30px 100px;
+}
+
+.register:hover {
+    background-color: rgba(255, 0, 0, 0.712);
+}
+
+/* 复制的公共样式 */
+
+/* 文字居中对齐 */
+
+.mod_copyright {
+    text-align: center;
+}
+
+/* 链接之间间距 */
+
+.mod_copyright_top {
+    margin: 10px 0px;
+}
+
+.mod_copyright_top a {
+    padding: 0px 3px;
+}

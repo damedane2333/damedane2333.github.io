@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?8liq7b');
+    src: url('../fonts/icomoon.eot?8liq7b#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?8liq7b') format('truetype'), url('../fonts/icomoon.woff?8liq7b') format('woff'), url('../fonts/icomoon.svg?8liq7b#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.main {
+    margin: 0px auto;
+    margin-top: 10px;
+    height: 455px;
+    width: 980px;
+    margin-left: 220px;
+}
+
+/* 焦点图 -----------------------------------------有关于轮播图*/
+
+.focus_img {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 100%;
+    background-color: blue;
+}
+
+.focus_img img {
+    width: 721px;
+    height: 455px;
+}
+
+/* 给轮播图的切换轮播图按钮添加绝对定位，给其父盒子添加相对定位 */
+
+.focus_img .focus_img_lastimg,
+.focus_img_nextimg {
+    width: 31px;
+    height: 42px;
+    background-color: pink;
+}
+
+/* 给他们各自定位 */
+
+.focus_img_lastimg {
+    /* 改变鼠标样式为小手 */
+    cursor: pointer;
+    font-family: 'icomoon';
+    font-size: 31px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+/* 右边 */
+
+.focus_img_nextimg {
+    /* 改变鼠标样式为小手 */
+    cursor: pointer;
+    /* 给他声明字体 */
+    font-family: 'icomoon';
+    font-size: 31px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+}
+
+/* ------------------------------------------------有关于新闻模块 */
+
+.new_flash {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+
+/* 新闻模块 */
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news ul li {
+    height: 25px;
+    padding: 1px 15px;
+    line-height: 25px;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 文字不换行显示 */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news ul li font {
+    font-weight: bold;
+}
+
+.news_header {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px dashed #e4e4e4;
+}
+
+.news_header h3 {
+    float: left;
+    line-height: 35px;
+    padding: 0px 15px;
+}
+
+/* 更多 */
+
+.news_header a {
+    float: right;
+    margin-right: 25px;
+}
+
+/* 更多后面添加 */
+
+.news_header a::after {
+    font-family: 'icomoon';
+    content: '\e907';
+}
+
+/* 生活服务模块 */
+
+.lifeservices {
+    height: 215px;
+    border: 1px solid #e4e4e4;
+    border-top: 0px;
+}
+
+.lifeservices ul li {
+    float: left;
+    width: 250px;
+    height: 36px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    /* background-color: pink; */
+}
+
+.lifeservices ul li:hover {
+    box-shadow: 3px 3px 3px #808080;
+}
+
+/* 装不下了采取加宽一个父盒子ul的方案也可以再写一个父盒子方案1、 */
+
+/* .lifeservices ul{
+    width:252px;
+  
+}  */
+
+.lifeservices {
+    overflow: hidden;
+}
+
+.lifeservices ul li i {
+    display: inline-block;
+    margin-top: 10px;
+    width: 45px;
+    height: 40px;
+    background: url("../images/icons.png")no-repeat -6px -10px;
+}
+
+.lifeservices ul li p {
+    margin-top: -5px;
+}
+
+/* 推荐模块 */
+
+.recommend {
+    margin-top: 12px;
+    height: 163px;
+    background-color: rgb(235, 235, 235);
+}
+
+.recommend_img {
+    position: relative;
+    float: left;
+    text-align: center;
+    height: 100%;
+    width: 208px;
+    background-color: rgb(253, 252, 252);
+    padding-top: 35px;
+}
+
+/* 半透明 */
+
+.touming {
+    position: absolute;
+    display: none;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(190, 218, 241, 0.6);
+}
+
+/* 鼠标经过显示 */
+
+.recommend_img:hover .touming {
+    display: block;
+}
+
+.recommend_right ul li {
+    float: left;
+    position: relative;
+}
+
+.recommend_right ul li img {
+    height: 163px;
+    width: 247px;
+}
+
+.recommend_right ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 1px;
+    height: 128px;
+    background-color: #ddd;
+}
+
+.recommend_right ul li:hover {
+    z-index: +1;
+    box-shadow: 10px 10px 5px #808080;
+}

@@ -1,0 +1,434 @@
+/* 公共样式部分 */
+
+/* 字体 */
+
+/* 这里一定要注意路径的变化 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?8liq7b');
+    src: url('../fonts/icomoon.eot?8liq7b#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?8liq7b') format('truetype'), url('../fonts/icomoon.woff?8liq7b') format('woff'), url('../fonts/icomoon.svg?8liq7b#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心 */
+
+.w {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* a链接红色 */
+
+.style_red {
+    color: #b81b1b;
+}
+
+/* 快捷导航模块 */
+
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+.shortcut li {
+    float: left;
+}
+
+.fl {
+    float: left;
+}
+
+.shortcut .fr {
+    float: right;
+}
+
+.arrow-icon::after {
+    margin-left: 15px;
+    font-family: 'icomoon';
+    content: '\e905';
+}
+
+/* 小竖线 */
+
+.shortcut .fr li:nth-child(even) {
+    height: 12px;
+    width: 1px;
+    background-color: #666;
+    margin: 9px 15px;
+}
+
+.header {
+    position: relative;
+    height: 105px;
+}
+
+logo {
+    width: 171px;
+    height: 61px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    float: left;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url("../images/logo3.png") no-repeat;
+    font-size: 0;
+}
+
+/* 购物车 */
+
+.shopingcar {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.shopingcar::before {
+    font-family: 'icomoon';
+    content: '\e90c';
+    color: #9ce76b;
+    font-size: 15px;
+    margin-right: 10px;
+    line-height: 35px;
+}
+
+.shopingcar a {
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.shopingcar::after {
+    font-family: 'icomoon';
+    content: '\e907';
+    color: red;
+}
+
+.shopingcar .i_count {
+    height: 15px;
+    padding: 3px 3px;
+    line-height: 100%;
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    color: white;
+    background-color: #9ce76b;
+    border-radius: 5px;
+}
+
+/* 搜索框 */
+
+.search {
+    position: absolute;
+    top: 25px;
+    left: 346px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #9ce76b;
+}
+
+.search input[type="search"] {
+    float: left;
+    width: 454px;
+    height: 100%;
+    padding-left: 8px;
+}
+
+.search .search_button {
+    float: right;
+    width: 80px;
+    height: 33px;
+    background: #9ce76b;
+    ;
+}
+
+/* 热词 */
+
+.hotwords {
+    position: absolute;
+    top: 65px;
+    left: 345px;
+}
+
+.hotwords ul li {
+    float: left;
+    padding: 3px 15px;
+    font-size: 12px;
+}
+
+/* 导航栏 */
+
+.nav {
+    height: 45px;
+    border-bottom: 2px solid #9ce76b;
+}
+
+/* 下拉菜单-------------------------------------------- */
+
+.dropdown {
+    cursor: pointer;
+    position: relative;
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #529227;
+}
+
+.dt {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* 装有小li的盒子 */
+
+.dropdown_menu {
+    /*隐藏 */
+    /* display: none; */
+    position: absolute;
+    bottom: -465px;
+    width: 210px;
+    z-index: +1;
+}
+
+.dropdown1 {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 210px;
+    height: 455px;
+    width: 734px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown1 a {
+    color: black !important;
+}
+
+.dropdown:hover .dropdown1 {
+    display: block;
+}
+
+.dt {
+    font-family: 'icomoon';
+}
+
+/* -----------------------------二级跳转----------------------------------------- */
+
+.dropdown1 li {
+    font-size: 12px !important;
+    float: left;
+    height: 50px !important;
+    width: 104px !important;
+    background-color: rgba(252, 252, 252, 0.3) !important;
+}
+
+/* 大棚的内边距 */
+
+.dropdown1hover {
+    padding: 0;
+}
+
+/* 经过显示 */
+
+.dropdown1hover:hover .dropdown_menu {
+    display: block;
+}
+
+.dropdown_menu ul li {
+    font-size: 23px;
+    position: relative;
+    padding-left: 0px;
+    height: 115px;
+    line-height: 31px;
+    width: 210px;
+    background-color: #9ce76b;
+}
+
+/* 鼠标经过小li */
+
+.dropdown_menu ul li:hover {
+    width: 220px;
+    height: 115px;
+}
+
+.dropdown_menu ul li:hover a {
+    color: rgb(224, 5, 5);
+}
+
+.dropdown_menu ul li:hover .dropdown_menu ul li::after {
+    color: red;
+}
+
+.dropdown_menu ul li a {
+    width: 100%;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.dropdown_menu ul li::after {
+    position: absolute;
+    right: 10px;
+    font-family: 'icomoon';
+    font-size: 16px;
+    content: '\e907';
+    color: #ffffff;
+}
+
+.navitems {
+    float: left;
+}
+
+.navitems ul li {
+    float: left;
+    margin-top: 5px;
+    padding: 8px 20px;
+}
+
+.navitems ul li a {
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: black;
+}
+
+/* 底部模块代码 */
+
+.footer {
+    z-index: -1;
+    position: relative;
+    padding-top: 30px;
+    margin-top: 20px;
+    bottom: 10px;
+    height: 415px;
+    background: #f5f5f5;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #80808080;
+}
+
+.mod_service ul li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 35px;
+}
+
+.mod_service ul li h5 {
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-right: 8px;
+}
+
+/* 正品保障精灵图 */
+
+.mod_service ul li .h5_1 {
+    background: url("../images/icons.png")no-repeat -252px -2px;
+}
+
+.mod_service ul li .h5_2 {
+    background: url("../images/icons.png")no-repeat -255px -53px;
+}
+
+.mod_service ul li .h5_3 {
+    background: url("../images/icons.png")no-repeat -256px -106px;
+}
+
+.mod_service ul li .h5_4 {
+    background: url("../images/icons.png")no-repeat -257px -157px;
+}
+
+.mod_service ul li .h5_5 {
+    background: url("../images/icons.png")no-repeat -257px -208px;
+}
+
+/* 精灵图stop */
+
+.service_txt h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.service_txt p {
+    font-size: 12px;
+}
+
+.mod_help {
+    margin-top: 20px;
+    padding-left: 30px;
+    height: 200px;
+    border-bottom: 1px solid #808080;
+}
+
+.mod_help_t {
+    font-size: 21px;
+    float: left;
+    width: 350px;
+    height: 146x;
+}
+
+.mod_help_t ul li {
+    padding: 5px 10px;
+}
+
+.mod_help_t .h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mod_help_t:last-child {
+    width: 103px;
+}
+
+/* 文字居中对齐 */
+
+.mod_copyright {
+    text-align: center;
+}
+
+/* 链接之间间距 */
+
+.mod_copyright_top {
+    margin: 10px 0px;
+}
+
+.mod_copyright_top a {
+    padding: 0px 3px;
+}
+
+/* 固定定位的二维码 */
+
+.fixedewm {
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    top: 400px;
+    right: 0px;
+    background-color: pink;
+}
+
+.smgz {
+    width: 90px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 380px;
+    right: 0px;
+    background-color: rgb(173, 245, 6);
+}
