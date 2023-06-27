@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>菜园乐享</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="菜园乐享-云种植" />
+    <meta name="Keywords" content="网上购物,网上商城,云种植，蔬菜认领" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入首页专用模块css样式 -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入公共js部分 -->
+    <script src="js/common.js" type="text/javascript"></script>
+    <!-- 引入自身js -->
+    <script src="js/index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- 快捷导航-->
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>菜园乐享欢迎您！&nbsp</li>
+                    <li>
+                        <a href="">请登陆&nbsp</a>
+                        <a href="register.html" class="style_red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 顶部右侧 -->
+            <div class="fr">
+                <ul>
+                    <li class=".fr_li">
+                        <a>我的订单</a>
+                    </li>
+                    <li></li>
+                    <li class="arrow-icon">我的菜园</li>
+                    <li></li>
+                    <li>乐享会员</li>
+                    <li></li>
+                    <li>企业采购</li>
+                    <li></li>
+                    <li>关注菜园乐享</li>
+                    <li></li>
+                    <li class="arrow-icon">客户服务</li>
+                    <li></li>
+                    <li class="arrow-icon">网站导航</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 头部 -->
+    <header class="header w clearfix">
+        <logo class="logo">
+            <h1>
+                <a href="index.html" title="菜园乐享">菜园乐享</a>
+            </h1>
+        </logo>
+        <!-- 搜索模块 -->
+        <div class="search">
+            <input type="search" placeholder="娃娃菜" id="search" onfocus='search_onfous()' onblur='search_onblur()' />
+            <input type="button" class="search_button" value="搜索" onclick="" />
+        </div>
+
+        <!-- 热点词模块 -->
+        <div class="hotwords">
+            <ul>
+                <li>
+                    <a href="#" class="style_red">优惠首发</a>
+                </li>
+                <li>
+                    <a href="#">商家入驻</a>
+                </li>
+                <li>
+                    <a href="#">团购蔬菜</a>
+                </li>
+                <li>
+                    <a href="#">限时送达</a>
+                </li>
+                <li>
+                    <a href="#">云种菜</a>
+                </li>
+                <li>
+                    <a href="#">全程托管</a>
+                </li>
+                <li>
+                    <a href="#">各季时蔬</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- 购物车 -->
+        <div class="shopingcar">
+            <a href="">我的蔬菜</a>
+            <i class="i_count">99+</i>
+        </div>
+    </header>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt">常德</div>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li class="dropdown1hover">
+                            <a href="#">
+                                <!-- 大棚图片 -->
+                                <img src="upload/dp1.png" alt="">
+                            </a>
+                            <ul class="dropdown1">
+                                <li>
+                                    空心菜
+                                </li>
+                                <li>茼蒿</li>
+                                <li>娃娃菜</li>
+                                <li>茄子</li>
+                                <li>豆角</li>
+                                <li>西红柿</li>
+                                <li>红薯</li>
+                                <li>冬瓜</li>
+                                <li>玉米</li>
+                                <li>萝卜</li>
+                                <li>洋葱</li>
+                                <li>辣椒</li>
+                                <li>空心菜</li>
+                                <li>大蒜</li>
+                                <li>小白菜</li>
+                                <li>丝瓜</li>
+                                <li>上海青</li>
+                                <li>土豆</li>
+                                <li>莴笋</li>
+                                <li>香葱</li>
+                                <li>黄瓜</li>
+                                <li>南瓜</li>
+                                <li>香菜</li>
+                                <li>苦瓜</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown2hove">
+                            <a href="#">
+
+                                <!-- 大棚图片 -->
+                                <img src="upload/dp2.png" alt="">
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+
+                                <!-- 大棚图片 -->
+                                <img src="upload/dp3.png" alt="">
+
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <!-- 大棚图片 -->
+                                <img src="upload/dp4.png" alt="">
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </nav>
+    <!-- 结束 -->
+    <!-- 首页专有的模块 main -->
+    <div class="w">
+        <div class="main">
+            <div class="focus_img">
+                <ul>
+                    <li>
+                        <!-- 展示图 -->
+                        <a href="LandingPage.html" target="_blank">
+                            <img src=" upload/01.png" alt=" " id='focus_img_img'>
+                        </a>
+
+                    </li>
+                    <!-- 植入两个盒子用于切换轮播图
+                    <li class='focus_img_lastimg' id="focus_img_lastimg" onclick='chageimg()'></li>
+                    <li class=' focus_img_nextimg' id="focus_img_nextimg"></li> -->
+
+                </ul>
+
+            </div>
+            <!-- 新闻栏-新闻栏                         新闻栏         新闻栏-->
+            <div class="new_flash ">
+                <div class="news ">
+                    <div class="news_header ">
+                        <h3>菜园乐享快报</h3>
+                        <a herf=" # ">更多</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a>
+                                <font>[特惠]</font>
+                                夏季来临，蔬菜折扣
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <font>[公告]</font>
+                                今日起小程序可进行线上购菜</li>
+                        </a>
+
+                        <li>
+                            <a href="# ">
+                                <font>[入驻]</font>
+                                公司酒店,市场人员可入驻</li>
+                        </a>
+
+                        <li>
+                            <a href="# ">
+                                <font>[公告]</font>
+                                娃娃菜可以开始播种啦</li>
+                        </a>
+
+                        <li>
+                            <a href="# ">
+                                <font>[特惠]</font>
+                                即刻预定大棚可享优惠
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lifeservices ">
+                    <ul>
+                        <li>[限时优惠]</li>
+                        <li>[限时优惠]</li>
+                        <li>[限时优惠]</li>
+                        <li>[限时优惠]</li>
+                        <li>[限时优惠]</li>
+                        <li>[限时优惠]</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 推荐模块start -->
+    <div class="recommend w ">
+        <div class="recommend_img ">
+            <a href=" ">
+                <img src="upload/today.png " alt=" ">
+                <div class="touming "></div>
+            </a>
+        </div>
+        <div class=" recommend_right ">
+            <ul>
+                <li>
+                    <a href="# ">
+                        <img src="upload/tj1.png " alt=" ">
+                    </a>
+                </li>
+                <li>
+                    <a href="# ">
+                        <img src="upload/tj2.png " alt=" ">
+                    </a>
+                </li>
+                <li>
+                    <a href="# ">
+                        <img src="upload/tj3.png " alt=" ">
+                    </a>
+                </li>
+                <li>
+                    <a href="# ">
+                        <img src="upload/tj4.png " alt=" ">
+                    </a>
+                </li>
+            </ul>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- 推荐模块end -->
+    <div class="fixedewm">
+        <img src="images/wxgzh.png" alt="">
+    </div>
+    <div class="smgz">扫码关注</div>
+
+
+    <!-- 尾部start -->
+    <footer class=" footer w ">
+        <div class="w ">
+            <div class="mod_service ">
+                <ul>
+                    <li>
+                        <h5 class="h5_1 "></h5>
+                        <div class="service_txt ">
+                            <h4>正品保障</h4>
+
+                            <p>正品保障，提供发票</p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <h5 class="h5_2 "></h5>
+                        <div class="service_txt ">
+                            <h4>急速物流</h4>
+                            <p>点单即可发货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="h5_3 "></h5>
+                        <div class="service_txt ">
+                            <h4>售后无忧</h4>
+                            <p>七天无理，退货包邮</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="h5_4 "></h5>
+                        <div class="service_txt ">
+                            <h4>特色服务</h4>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="h5_5 "></h5>
+                        <div class="service_txt ">
+                            <h4>需要帮助</h4>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 配送方式支付方式 -->
+            <div class="mod_help w ">
+
+                <div class="mod_help_t ">
+                    <ul>
+                        <li>
+                            <h3>配送方式</h3>
+                        </li>
+                        <li>
+                            <a href=" ">上门自提</a>
+                        </li>
+                        <li>
+                            <a href=" ">限时配送</a>
+                        </li>
+                        <li>
+                            <a href=" ">配送费收取标准</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="mod_help_t ">
+                    <ul>
+                        <li>
+                            <h3>购物指南</h3>
+                        </li>
+                        <li>
+                            <a href=" "> 预约流程</a>
+                        </li>
+                        <li>
+                            <a href=" ">大棚介绍</a>
+                        </li>
+                        <li>
+                            <a href=" ">常见问题</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="mod_help_t ">
+                    <ul>
+                        <li>
+                            <h3>售后服务</h3>
+                        </li>
+                        <li>
+                            <a href=" ">退款说明</a>
+                        </li>
+                        <li>
+                            <a href=" ">取消订单</a>
+                        </li>
+                        <li>
+                            <a href=" ">价格保护</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="mod_help_t ">
+                    <ul>
+                        <h3 class="h3" style=font-size:20px;>官方公众号</h3>
+                        <li class="img ">
+                            <img src="images/wxgzh.png" />
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!-- 关于我们 -->
+            <div class="mod_copyright ">
+                <div class="mod_copyright_top ">
+                    <a href=" ">关于我们</a>|
+                    <a href=" ">About us</a> |
+                    <a href=" ">Investor Relations</a> |
+                    <a href=" ">媒体报道</a> |
+                    <a href=" ">平台规则</a> |
+                    <a href=" "> 隐私条款</a> |
+                    <a href=" ">服务条款</a> |
+                    <a href=" ">联系我们</a> |
+                    <a href=" ">品优社区</a> |
+                    <a href=" ">商家入驻</a>
+                </div>
+                <div class="mod_copyright_bottom ">
+                    地址：常德市武陵xxxxxxxxxxxxxxxxxxxxxxxxx 邮编：10xxxx6 电话：400-xxx-xxx4 传真:010-1xxxxxx1 邮箱:xxxxx.cn
+                    <br> 京ICP备080xxxx12xxx1号京公网安备110xxxxxxxx702
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
